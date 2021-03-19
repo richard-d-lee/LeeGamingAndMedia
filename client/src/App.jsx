@@ -3,7 +3,7 @@ import React from 'react';
 const App = () => {
     return ( 
         <div>
-            Hello World!
+            Welcome to Lee Gaming and Media!
         </div>
     );
 }
