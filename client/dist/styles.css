@@ -1,0 +1,22 @@
+.banner {
+    background-color: black;
+    color: white;
+    height: 63px;
+    padding-left: 15px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    font-size: xx-large;
+    padding: 5px 23px 0px 7px;
+    justify-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: -moz-hidden-unscrollable;
+  }
+  .banner:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  
