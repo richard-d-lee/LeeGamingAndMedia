@@ -4,10 +4,10 @@ function Banner(props) {
   return (
     <div className="banner" onClick={props.return}>
       <center>
-        <label id="name" onClick={props.return}>Richard Lee | Denver, CO | Open to remote work or relocation.</label>
+        <label id="name" onClick={props.return}>Lee Gaming and Media</label>
       </center>
       <center>
-        <label id="name" onClick={props.return}>Node.js, React, SQL and no-SQL, AWS</label>
+        <label id="name" onClick={props.return}>Where Dreams Live in Code</label>
       </center>
     </div>
   )
