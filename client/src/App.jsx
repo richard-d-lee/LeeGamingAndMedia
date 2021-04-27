@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner from './components/Banner.jsx';
+import Sidebar from './components/Sidebar.jsx';
 
 class App extends React.Component {
     constructor(props) {
@@ -14,8 +14,6 @@ class App extends React.Component {
         document.getElementById("mySidebar").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
       }
-      
-      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
     closeNav() {
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
@@ -23,8 +21,15 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                Welcome to Lee Gaming and Media!
-                <Banner open={this.openNav} close={this.closeNav}/>
+                <div className="topbar">
+                    <Sidebar open={this.openNav} close={this.closeNav}/>
+                    <div className="banner">
+                        Welcome to Lee Gaming and Media!
+                    </div>
+                    <label className="login">
+                        login
+                    </label>
+                </div>
             </div>
         );
     }
