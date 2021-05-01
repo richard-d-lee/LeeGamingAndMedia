@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
 function Sidebar(props) {
-  console.log(this)
-  return (
+    return (
     <div>
       <div id="mySidebar" className="sidebar">
         <a href="javascript:void(0)" className="closebtn" onClick={props.close}>&times;</a>
@@ -10,6 +9,7 @@ function Sidebar(props) {
         <a href="#">Reviews</a>
         <a href="#">Podcasts</a>
         <a href="#">Crispy's Page</a>
+        <a href="#">S/D/S</a>
         <a href="#">Forum</a>
         <a href="#">Other Content</a>
         <a href="#">About Us</a>
