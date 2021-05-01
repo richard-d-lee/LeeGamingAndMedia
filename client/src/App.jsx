@@ -1,11 +1,12 @@
 import React from 'react';
-import Sidebar from './components/Sidebar.jsx';
+import Topbar from './components/Topbar.jsx';
+
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            page: "home"
         }
         this.openNav = this.openNav.bind(this);
         this.closeNav = this.closeNav.bind(this);
@@ -21,15 +22,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <div className="topbar">
-                    <Sidebar open={this.openNav} close={this.closeNav}/>
-                    <div className="banner">
-                        Welcome to Lee Gaming and Media!
-                    </div>
-                    <label className="login">
-                        login
-                    </label>
-                </div>
+                <Topbar open={this.openNav} close={this.closeNav}>Hello world</Topbar>
             </div>
         );
     }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 function Sidebar(props) {
+  console.log(this)
   return (
     <div>
       <div id="mySidebar" className="sidebar">
