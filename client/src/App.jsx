@@ -1,6 +1,6 @@
 import React from 'react';
 import Topbar from './components/Topbar.jsx';
-
+import $ from 'jquery'; 
 
 class App extends React.Component {
     constructor(props) {

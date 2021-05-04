@@ -8,7 +8,7 @@ function Sidebar(props) {
         <a href="#">Artwork</a>
         <a href="#">Reviews</a>
         <a href="#">Podcasts</a>
-        <a href="#">Crispy's Page</a>
+        <a className="crispy" href="#">Crispy's Page</a>
         <a href="#">S/D/S</a>
         <a href="#">Forum</a>
         <a href="#">Other Content</a>
