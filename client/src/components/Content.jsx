@@ -23,7 +23,6 @@ function Content(props) {
                     </div>
                     <div>
                         {   //booger
-                            //old content
                         }
                     </div>
                 </div>
