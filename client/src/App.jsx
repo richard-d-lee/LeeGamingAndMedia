@@ -1,5 +1,6 @@
 import React from 'react';
 import Topbar from './components/Topbar.jsx';
+import Content from './components/Content.jsx';
 import $ from 'jquery'; 
 
 class App extends React.Component {
@@ -10,7 +11,13 @@ class App extends React.Component {
         }
         this.openNav = this.openNav.bind(this);
         this.closeNav = this.closeNav.bind(this);
+        this.pageChange = this.pageChange.bind(this);
     }
+
+    pageChange(newPage) {
+        this.setState({page: newPage});
+    }
+
     openNav() {
         document.getElementById("mySidebar").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
@@ -22,7 +29,8 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Topbar open={this.openNav} close={this.closeNav}>Hello world</Topbar>
+                <Topbar open={this.openNav} close={this.closeNav} change={this.pageChange} />
+                <Content page={this.state.page}/>
             </div>
         );
     }

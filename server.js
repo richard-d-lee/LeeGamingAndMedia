@@ -16,10 +16,9 @@ var getIndexBelowMaxForKey = function (str, max) {
 	return hash % max;
 };
 
-app.use(express.static('./client/dist')); // Host your dist folder up to the server
-app.use(express.json()); // Alternative to BodyParser
+app.use(express.static('./client/dist'));
+app.use(express.json());
 
-// If you had to handle requests on the server side, this is where that would occur
 app.post('/clicked', (req, res) => {
 	User.findOneAndUpdate({
 		name: req.body.userName,

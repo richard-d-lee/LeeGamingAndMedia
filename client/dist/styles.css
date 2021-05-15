@@ -36,7 +36,29 @@ body {
 .openbtn:hover {
   background-color: rgb(177, 177, 177);
 }
- .sidebar {
+
+.portal {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.register {
+  margin-right: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: xx-large;
+}
+
+.register:hover {
+  background-color: burlywood;
+  border-radius: 25px;
+  height: max-content;
+  cursor: pointer;
+  width: min-content;
+  padding: 10px;
+}
+
+.sidebar {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */

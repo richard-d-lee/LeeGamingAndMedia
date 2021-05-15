@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 
 function Content(props) {
+    if (props.page === "login") {
+        return (<div><p>Hello World ghsdffdhghfklsdhgfjkghs</p></div>)
+    }
     return (
         <div>
             <div>
