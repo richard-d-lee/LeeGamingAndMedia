@@ -19,12 +19,12 @@ class App extends React.Component {
     }
 
     openNav() {
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        $("#mySidebar").css("width", "250px");
+        $("#main").css("margin-left", "250px");
       }
     closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
+        $("#mySidebar").css("width","0");
+        $("#main").css("margin-left", "0");
       } 
     render() {
         return (

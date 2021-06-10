@@ -1,7 +1,7 @@
 const express = require('express');
 // const list = require("./scoreList.js");
 const app = express();
-const PORT = 3000;
+const PORT = 3100;
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/users', { useNewUrlParser: true, useUnifiedTopology: true });
 const User = mongoose.model('User', { name: String, password: String, score: Number, clicked: Array, scoreList: Object });
